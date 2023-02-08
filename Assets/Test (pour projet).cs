@@ -2,29 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnnemyChaseBird : MonoBehaviour
+public class Test (pour projet) : MonoBehaviour
 {
 
     public Transform target;
     public float speed = 5f;
     private void Update()
-  {
+    {
         transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
         if (true)
         {
             transform.position = new Vector3(transform.position.x, -3.47f, transform.position.z);
 
         }
-        private Rigidbody rb;
+  {
+    private Rigidbody rb;
     public bool onG;
     float repeats;
     public float amount;
     public float rotateSpeed;
+    rb = GetComponent<Rigidbody>();
+  }
 
     // Use this for initialization
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        
         onG = true;
         repeats = 0;
     }
@@ -52,7 +55,7 @@ public class EnnemyChaseBird : MonoBehaviour
     void OnCollisionEnter(Collision other)
     {
 
-        if (other.gameObject.CompareTag("ground"))
+        if (other.gameObject.CompareTag("sol"))
         {
             onG = true;
         }
