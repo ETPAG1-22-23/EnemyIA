@@ -328,9 +328,9 @@ GameObject:
   m_Component:
   - component: {fileID: 295198808}
   - component: {fileID: 295198807}
-  - component: {fileID: 295198811}
   - component: {fileID: 295198810}
   - component: {fileID: 295198809}
+  - component: {fileID: 295198811}
   m_Layer: 0
   m_Name: Marionnette
   m_TagString: Puppet2
@@ -451,10 +451,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 295198806}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee1d72f856983be44a8ffbee5a38c3b3, type: 3}
+  m_Script: {fileID: 11500000, guid: ed9c348b45bda734b8511b991838e322, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
 --- !u!1 &409704517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,8 +1200,6 @@ GameObject:
   - component: {fileID: 1313170241}
   - component: {fileID: 1313170244}
   - component: {fileID: 1313170245}
-  - component: {fileID: 1313170246}
-  - component: {fileID: 1313170247}
   m_Layer: 0
   m_Name: Fille
   m_TagString: Girl1
@@ -1323,36 +1320,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1313170240}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee1d72f856983be44a8ffbee5a38c3b3, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b59681eb5afe804eaa7b9f7379e6ee1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5000
---- !u!114 &1313170246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1313170240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c11ea128b2ecf444be7f96683f15b0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1313170247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1313170240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05f956819390cf941b3f2d96f3fa1cee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerF: {fileID: 1313170240}
-  PlayerM: {fileID: 295198806}
 --- !u!1 &1466311551
 GameObject:
   m_ObjectHideFlags: 0
