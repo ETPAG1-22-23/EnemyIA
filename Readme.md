@@ -14,5 +14,5 @@ Idées :
 
 - Patrouille d'un point de localisation A à un point B (validé)
 - Trigger zone pour stopper la ronde, changer d'état et poursuivre le joueur (validé) 
-- pendant la post détection, points de localisation de la map remplacé par les coordonnées du joueur
 - Interactivité avec l'environnement de l'IA
+- Interactvité avec le joueur de l'IA
