@@ -6,7 +6,7 @@ public class deplacementia : MonoBehaviour
 {
     
 
-    float speed = 5f;
+    float speeda = 5f;
     float distance = 2f;
     private bool movingRight = true;
     public Transform groundDetection;
@@ -20,7 +20,7 @@ public class deplacementia : MonoBehaviour
     void Update()
     {
 
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
+        transform.Translate(Vector2.right * speeda * Time.deltaTime);
         RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down,distance);
         if(groundInfo.collider == false)
         {

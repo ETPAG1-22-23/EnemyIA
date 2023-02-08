@@ -5,7 +5,7 @@ using UnityEngine;
 public class Iafollow : MonoBehaviour
 { 
     public Transform target;
-    public float speed = 5f;
+    public float speedb = 5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +16,7 @@ public class Iafollow : MonoBehaviour
     void Update()
     {   
         
-        transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, target.position, speedb * Time.deltaTime);
         if (transform.position.y == 3) 
         {
             transform.position = new Vector3(transform.position.x, 3, transform.position.z);
