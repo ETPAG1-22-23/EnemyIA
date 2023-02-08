@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Testpourprojet : MonoBehaviour
+public class Test (pour projet) : MonoBehaviour
 {
 
     public Transform target;
