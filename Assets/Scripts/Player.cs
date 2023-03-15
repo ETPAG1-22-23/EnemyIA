@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
-        animController = GetComponent<Animator>();
+        //animController = GetComponent<Animator>();
         //Debug.Log(Mathf.Lerp(current, target, 0));
     }
 
@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
         if(horizontal_value > 0) sr.flipX = false;
         else if (horizontal_value < 0) sr.flipX = true;
         
-        animController.SetFloat("Speed", Mathf.Abs(horizontal_value));
+        //animController.SetFloat("Speed", Mathf.Abs(horizontal_value));
    
         if (Input.GetButtonDown("Jump") && can_jump)
         {
@@ -58,10 +58,10 @@ public class Player : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
         can_jump = true;
-        animController.SetBool("Jumping", false);
+        //animController.SetBool("Jumping", false);
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    /*private void OnTriggerEnter2D(Collider2D collision)
     {   
         animController.SetBool("Jumping", false);        
-    }
+    }*/
 }

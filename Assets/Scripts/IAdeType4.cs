@@ -1,8 +1,14 @@
+//Ne fonctionne pas encore appeler les fonctions est compliquer
+//Doit mmelanger les scripts precedents
+
+
+
+/*
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class scriptcomplet : MonoBehaviour
+public class IAdeType4 : MonoBehaviour
 {
     float speeda = 5f;
     float distancea = 2f;
@@ -68,3 +74,4 @@ public class scriptcomplet : MonoBehaviour
     // Update is called once per frame
   
 }
+*/

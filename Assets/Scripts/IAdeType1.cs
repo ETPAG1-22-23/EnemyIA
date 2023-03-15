@@ -2,13 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class rechercheplayeria : MonoBehaviour
+public class IAdeType1 : MonoBehaviour
 {
 
-    
+    //Cette ia fait des aller retours sur la plateforme ou elle
+    // est placer avec le ground dectetion
+    // normalement des qu'elle voit un joueur elle lui fonce dessus
+    //ce script est utilisable si on veut faire des enemies qui font des allers retours basiques
+    // ex des goumbas ou des robots
 
-    float speed = 5f;
-    float distance = 2f;
+    [SerializeField] float speed = 5f;
+    [SerializeField] float distance = 2f;
     private bool movingRight = true;
     public Transform groundDetection;
     public Transform target;
