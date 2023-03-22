@@ -1,9 +1,9 @@
 //Ne fonctionne pas encore appeler les fonctions est compliquer
-//Doit mmelanger les scripts precedents
+//Melange les 2 scripts
 
 
 
-/*
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,7 +16,10 @@ public class IAdeType4 : MonoBehaviour
     public Transform groundDetection;
     public Transform target;
     public float speedb = 5f;
+    float distancemax = 10;
     // Start is called before the first frame update
+
+    bool atckType1 = true;
     void Start()
     {
         
@@ -47,7 +50,7 @@ public class IAdeType4 : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, target.position, speedb * Time.deltaTime);
         if (transform.position.y == 3)
         {
-            transform.position = new Vector3(transform.position.x, 3, transform.position.z);
+            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         }
     }
     // Start is called before the first frame update
@@ -58,14 +61,26 @@ public class IAdeType4 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.P))
+        if(Vector3.Distance(transform.position, target.transform.position) < distancemax)
+        
         {
-            function1();
+            atckType1 = false;
+            //if(Input.GetKeyDown(KeyCode.P))
         }
-        if(Input.GetKeyDown(KeyCode.J))
+        else
         {
-            function2();
+            atckType1 = true; 
+            if (atckType1)
+            {
+                function1();
+            }
+            else
+            {
+                function2();
+            }
         }
+        
+       
     }
     
     // Start is called before the first frame update
@@ -74,4 +89,3 @@ public class IAdeType4 : MonoBehaviour
     // Update is called once per frame
   
 }
-*/
