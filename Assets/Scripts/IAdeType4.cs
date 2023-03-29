@@ -1,5 +1,6 @@
 //Ne fonctionne pas encore appeler les fonctions est compliquer
-//Melange les 2 scripts
+//Doit mmelanger les scripts precedents
+//Modif If corriger
 
 
 
@@ -16,7 +17,7 @@ public class IAdeType4 : MonoBehaviour
     public Transform groundDetection;
     public Transform target;
     public float speedb = 5f;
-    float distancemax = 10;
+    float distancemax = 5f;
     // Start is called before the first frame update
 
     bool atckType1 = true;
@@ -61,24 +62,25 @@ public class IAdeType4 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Vector3.Distance(transform.position, target.transform.position) < distancemax)
-        
+        if (Vector3.Distance(transform.position, target.transform.position) < distancemax)
+
         {
             atckType1 = false;
             //if(Input.GetKeyDown(KeyCode.P))
         }
         else
         {
-            atckType1 = true; 
-            if (atckType1)
-            {
-                function1();
-            }
-            else
-            {
-                function2();
-            }
+            atckType1 = true;
         }
+        if (atckType1)
+        {
+            function1();
+        }
+        else
+        {
+            function2();
+        }
+        
         
        
     }
